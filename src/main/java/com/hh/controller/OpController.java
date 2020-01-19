@@ -28,9 +28,9 @@ public class OpController {
         // 从session中获取uid
         String uid = userDto.getId();
         // 调用业务对象的showInfo()方法查询用户数据
-        User data = userService.findUserByid(uid);
+        User ppp = userService.findUserByid(uid);
         // 返回OK与以上调用时的返回结果
-        return new Result<>("200","OK", data);
+        return new Result<>("200","OK", ppp);
     }
 
     @PostMapping("info/add")
